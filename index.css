@@ -1,0 +1,23 @@
+body{
+    background-color: tan;
+}
+
+h2{
+    text-align: center;
+    border:darkred;
+    border-style: groove;
+}
+
+h4{
+   text-align: left;
+   
+}
+#wo{
+text-align: center;
+border: 5px double brown;
+}
+
+#wa{
+    background-color: darkgoldenrod;
+    border: 1px solid darkred;
+}
