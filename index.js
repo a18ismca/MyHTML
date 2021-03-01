@@ -10,6 +10,7 @@ var i = {
     }
 };
 
+
 class Car{
     constructor(name, year){
         this.name = name;
@@ -23,7 +24,36 @@ class Car{
 
 let myCar = new Car("Audi", 2003);
 
+var enArai = ["Ismet", "Amela", "Edin", "Lamija"];
 //Alert vid pop-up meddelanden.
+
+var numArray = [100, 39, 28, 27, 12, 47, 56, 48, 33, 101, 1239];
+
+
+var text = "";
+var i;
+for(i of enArai){
+    text += i + "<br>";
+}
+
+var txt = "";
+var j;
+for(j of numArray){
+    if(j > 40){
+        txt += j + "<br>"
+    }
+}
+
+    
+
+
+function showCatovics(){
+    document.getElementById("demo").innerHTML = text;
+}
+
+function whileTest(){
+    document.getElementById("demo").innerHTML = txt;
+}
 
 //Console i console.
 console.log(i.firstname + " is so many years old: " + i.age + ". Full name: " + i.fullname());
@@ -37,18 +67,17 @@ var nos = [40, 100, 1, 20];
 
 function ascendFunc(){
     nos.sort(function(a,b){return a-b});
-    document.getElementById("demo").innerHTML = nos;
-
+    document.getElementById("show").innerHTML = nos;
 }
 
 function descendFunc(){
     nos.sort(function(a,b){return b-a});
-    document.getElementById("demo").innerHTML = nos;
+    document.getElementById("show").innerHTML = nos;
 }
 
 function randomSort(){
     nos.sort(function(a,b){return 0.5 - Math.random()});
-    document.getElementById("demo").innerHTML = nos;
+    document.getElementById("show").innerHTML = nos;
 }
 
 //Are all over 18?
@@ -144,6 +173,18 @@ function myArrayMax(arr) {
     }
     return min;
   }
+
+
+var myNumbs = [18, 15, 23, 11, 100, 29, 1, 4];
+var passedNumbs = myNumbs.filter(Ismet);
+document.getElementById('show').innerHTML = "Numbers available: " + myNumbs.toString();
+document.getElementById('result').innerHTML = "Numbers that surpassed test: " + passedNumbs;
+
+function Ismet(value){
+    return value > 18
+    
+}
+
 
 
 /* Math...

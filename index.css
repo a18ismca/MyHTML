@@ -17,6 +17,10 @@ text-align: center;
 border: 5px double brown;
 }
 
+#demo{
+    text-align: center;
+}
+
 #wa{
     background-color: darkgoldenrod;
     border: 1px solid darkred;
